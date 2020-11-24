@@ -3,18 +3,96 @@
     <head>
         <title>Orbita | Drivers Wanted</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
         <style>
+            body {
+                margin: 0%;
+                padding: 0%;
+                width: 100%;
+                height: 100%;
+                background-image: url("north_america.svg");
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: 50% 50%;
+            }
+            header {
+                margin: 0;
+                padding: 0%;
+                width: 100%;
+                height: 15vh;
+                display: flex;
+                justify-content: start;
+                background-color: #ffffff;
+            }
+            header a {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: start;
+                text-decoration: none;
+            }
             h1 {
+                margin:  auto 2%;
+                padding: 0;
                 font-family: 'Roboto', sans-serif;
                 color: #1F6D8C;
             }
-            h1, a {
-                text-decoration: none;
-            }
             img {
-                width: 15%;
-                height: 28%;
+                margin: auto -5%;
+                padding: 0;
+                width: 30%;
+                height: 80%;
+                font-family: 'Roboto', sans-serif;
+                color: #1F6D8C;
+            }
+            #compensation_block {
+                margin: auto;
+                margin-right: 5%;
+                padding: 0;
+                width: 24%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                border-radius: .75rem;
+                background-color: #DD781D;
+            }
+            .margin_fix {
+                margin: 0 5%;
+                padding: 0;
+                width: 70%;
+            }
+            .center_margin {
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .white {
+                color: #ffffff;
+            }
+            .normal {
+                font-weight: normal;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .lato {
+                font-family: 'Lato', sans-serif;
+            }
+            .robato {
+                font-family: 'Roboto', sans-serif;
+            }
+            .small {
+                font-size: small;
+            }
+            .medium {
+                font-size: medium;
             }
             h4 {
                 font-family: 'Roboto', sans-serif;
@@ -22,57 +100,78 @@
                 color: #1F6D8C;
             }
             h2 {
+                margin: 5% 0 0 5%;
+                padding: 0;
+                width: 100%;
+                height: 100%;
                 font-family: 'Lato', sans-serif;
                 font-weight: bold;
                 color: #1F6D8C;
             }
             p {
                 font-family: 'Lato', sans-serif;
+                font-weight: bold;
                 color: #DD781D;
+            }
+            #about {
+                margin: 0 5%;
+                padding: 0;
+                width: 50%;
             }
             p a {
                 text-decoration: underline;
+            }
+            #requirements {
+                margin: 0 5%;
+                padding: 0;
+                width: 70%;
             }
             ul {
                 font-family: 'Roboto', sans-serif;
                 color: #1F6D8C;
                 font-weight: normal;
             }
-            h6 {
-                font-family: 'Roboto', sans-serif;
-                color: #DD781D;
-                font-weight: lighter;
-            }
         </style>
     </head>
     <body>
         <header>
-            <a href="https://marketexpress.com/"><h1>Delivery Drivers Wanted</h1><img src="logo.jpg" alt=""></a>
-            <h4>Compensation: &#36;35,000 to &#36;45,000 DOE</h4>
-            <h4>Employment Type: Full Time</h4>
+            <a href="https://marketexpress.com/"><img src="logo.svg" alt=""><h1>Delivery Drivers Wanted</h1></a>
+
+            <div id="compensation_block" class="normal white lato small">
+                <span class="bold medium">Compensation</span>
+                <span>&#36;35,000 to &#36;45,000 DOE</span>
+                <span class="bold medium">Employment Type</span>
+                <span>Full Time</span>
+            </div>
         </header>
 
-        <h2>Logistics Out of This World!</h2>
-        <p>Orbita Logistics Inc is looking for a competent driver to join their nation wide crew.</p>
-        <p>At Orbita Logistics we serve to more than 3200 costumers across North America.</p>
-        <p>Apply now if you want to be part of our success story or visit site to <a href="https://marketexpress.com/">learn more</a>.</p>
-        
-        <br>
+        <h2 class="robato">Logistics Out of This World!</h2>
+        <div id="about">
+            <p>Orbita Logistics Inc is looking for a competent driver to join their nation wide crew.
+                At Orbita Logistics we serve to more than 3200 costumers across North America.
+                Apply now if you want to be part of our success story or visit site to 
+                <a href="https://marketexpress.com/">learn more</a>.
+            </p>
+        </div>
 
-        <h2>Requirements</h2>
-        <ul>
-            <li>3 Years of experience</li>
-            <li>Have and be able to hold an Oregon State CDL</li>
-            <li>Pass a drug & criminal record screening</li>
-            <li>Be able to drive 12 to 16 hours</li>
-        </ul>
+        <h2 class="robato">Requirements</h2>
+        <div id="requirements">
+            <ul>
+                <li>3 Years of experience</li>
+                <li>Have and be able to hold an Oregon State CDL</li>
+                <li>Pass a drug & criminal record screening</li>
+                <li>Be able to drive 12 to 16 hours</li>
+            </ul>
+        </div>
 
-        <br>
-        
-        <a href="https://marketexpress.com/">Apply Now</a>
+        <a href="https://marketexpress.com/" class="margin_fix lato bold">Apply Now</a>
         <br>
         <br>
-        <h6>This is a mock ad and not a real job posting.</h6>
-        <h6>Copy Rights &copy; 2020 Orbita Logistics Inc</h6>        
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="center_margin lato normal">Copy Rights &copy; 2020 Orbita Logistics Inc</p>        
+        <p class="center_margin lato small">This is a mock ad and not a real job posting</p>
     </body>
 </html>
